@@ -1,0 +1,238 @@
+/*font-family: 'Chakra Petch', sans-serif;
+font-family: 'Orbitron', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+.button{
+    font-family: 'Orbitron', sans-serif;
+    border-top: 5px solid  #EEEEEE;
+    border-right: none;
+    border-bottom: 5px solid #EEEEEE;
+    border-left: 15px solid  #EEEEEE;
+    background-color: transparent;
+    font-size: 2rem;
+    color: white;
+    padding: 0 2rem 0 1rem;
+    cursor: pointer;
+}
+
+.dividers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider{
+    width: 600px;
+    height: 10px;
+    background: #EEEEEE;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.logoArticle{
+    padding-left: 3rem;
+}
+
+.linksArticle{
+    padding: 0 6rem;
+}
+
+.linksArticle ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.linksArticle li{
+    font-family: 'Orbitron', sans-serif;
+    color: #EEEEEE;
+    font-size: 2rem;
+    font-weight: 400;
+    position: relative;
+}
+
+.linksArticle li:hover{
+    cursor: pointer;
+    border-bottom: 10px solid #EEEEEE;
+    border-top: 10px solid transparent; 
+}
+
+.logo{
+    width: 280px;
+}
+
+p{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #EEEEEE;
+}
+
+.room {
+    display: flex;
+    align-items: flex-end;
+}
+
+.room article:nth-child(1){
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.room article:nth-child(2){
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.room article:nth-child(2) div{
+    width: 90ch;
+}
+
+.room article:nth-child(2) div h3{
+    font-family: 'Orbitron', sans-serif;
+    color: #EEEEEE;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.room img{
+    width: 389px;
+}
+
+.room article div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*MEDIA QUERY MAIN PAGE*/
+
+@media (max-width: 1050px){
+    nav{
+        justify-content: center;
+    }
+
+    .logoArticle {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 565px){
+
+
+    .info{
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .linksArticle {
+        padding: 0 2rem;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .info article hr{
+        width: 240px;
+    }
+}
+
+@media (max-width: 350px){
+    h1{
+        font-size: 2rem;
+    }
+
+    .logo{
+        width: 220px;
+    }
+}
+
+
+/*MEDIA QUERY ROOMS PAGE*/
+
+@media (max-width: 1230px){
+    .room{
+        flex-direction: column;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .room article:nth-child(1),
+    .room article:nth-child(2){
+        width: 100%;
+    }
+
+    .room img{
+        width: 70%;
+    }
+
+    .biggerImg{
+        display: none;
+    }
+}
+
+
+@media (max-width: 780px){
+
+    .search{
+        width: 100%;
+    }
+
+    .room article div{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .room article:nth-child(2) div{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .divider{
+        width: 300px;
+    }
+
+    .room img{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 380px){
+    .rooms{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search{
+        font-size: 1rem;
+    }
+
+}

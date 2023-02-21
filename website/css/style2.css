@@ -1,0 +1,103 @@
+body{
+    background-image: linear-gradient(to right, #1B18AB 10%, #6722D8 65%);
+}
+
+header{
+    padding: 2.5rem 0;
+}
+
+.linksArticle a:nth-child(1) li{
+    border-bottom: 10px solid #EEEEEE;
+    border-top: 10px solid transparent; 
+}
+
+main{
+    padding: 6rem 2rem;
+    position: relative;
+}
+
+main img:hover{
+    cursor: pointer;
+}
+
+.search{
+    font-family: 'Chakra Petch', sans-serif;
+    border-top: 5px solid  #EEEEEE;
+    border-right: none;
+    border-bottom: 5px solid #EEEEEE;
+    border-left: 15px solid  #EEEEEE;
+    background-color: transparent;
+    font-size: 2rem;
+    color: white;
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    outline: none;
+    width: 600px;
+}
+
+.search::placeholder{
+    color: white;
+}
+
+.searchSec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rooms{
+    margin-top: 8rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 6rem;
+}
+
+.is-hidden { 
+    display: none !important; 
+}
+
+.noti{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    background-color: #EEEEEE;
+    position: absolute;
+    top: -12px;
+    right: -15px;
+    color: black;
+    font-size: 1rem;
+    font-weight: 900;
+    display: none;
+    padding: 1rem;
+}
+
+
+.biggerImg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.biggerImg img{
+    width: 800px;
+}
+
+.biggerImg article{
+    display: none;
+}
+
+.biggerImg button{
+    display: none;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font-size: 1.5rem;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    cursor: pointer;
+}
+
+

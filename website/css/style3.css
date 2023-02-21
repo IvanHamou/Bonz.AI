@@ -1,0 +1,202 @@
+body{
+    background-image: linear-gradient(to right, #1B18AB 10%, #6722D8 65%);
+}
+
+header{
+    padding: 2.5rem 0;
+}
+
+.linksArticle a:nth-child(2) li{
+    border-bottom: 10px solid #EEEEEE;
+    border-top: 10px solid transparent; 
+}
+
+main{
+    padding: 6rem 2rem;
+}
+
+img{
+    width: 389px;
+}
+
+section{
+    display: flex;
+    align-items: center;
+}
+
+section article:nth-child(1) {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section article:nth-child(2) {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+h3{
+    font-family: 'Orbitron', sans-serif;
+    color: #EEEEEE;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.header{
+    display: flex;
+    width: 90ch;
+    align-items: center;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90ch;
+}
+
+.bookingInfo{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 90ch;
+    gap: 2rem;
+}
+
+.bookingInfo div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.priceNbook{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90ch;
+    gap: 2rem;
+}
+
+.priceNbook div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.priceNbook div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+h4{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #EEEEEE;
+}
+
+label{
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+    color: #EEEEEE;
+}
+
+#from,
+#until{
+    border: none;
+    padding: 0.5rem;
+}
+
+.datepicker-input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  width: 100%;
+  cursor: pointer;
+  position: absolute;
+}
+
+.datepicker-input {
+    position: relative;
+    padding: 0.5rem;
+    color: #EEEEEE;
+    font-family: 'Chakra Petch', sans-serif;
+    outline: none;
+    font-size: 1.2rem;
+} 
+
+#from{
+    background-color: #6722D8;
+    text-align: center;
+}
+
+#until{
+    background-color: #1B18AB;
+    text-align: center;
+}
+
+select{
+    background-color: #1B18AB;
+    border: none;
+    padding: 0.8rem 0.5rem;
+    color: #EEEEEE;
+    outline: none;
+}
+
+.dividers{
+    margin-top: 6rem;
+}
+
+
+@media (max-width: 1230px){
+    section:nth-child(1) {
+        flex-direction: column;
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section article:nth-child(1),
+    section article:nth-child(2) {
+        width: 100%;
+    }
+
+    section article:nth-child(1) img{
+        width: 70%;
+    }
+
+}
+
+@media (max-width: 780px){
+    .divider{
+        width: 300px;
+    }
+
+    section article:nth-child(1) img{
+        width: 100%;
+    }
+
+    .title,
+    .bookingInfo,
+    .priceNbook{
+        width: 100%;
+    }
+
+    .title{
+        justify-content: center;
+    }
+
+    .priceNbook{
+        justify-content: space-evenly;
+    }
+}
